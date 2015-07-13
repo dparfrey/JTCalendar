@@ -12,7 +12,8 @@
 @protocol JTCalendarDataSource <NSObject>
 
 - (BOOL)calendarHaveEvent:(JTCalendar *)calendar date:(NSDate *)date;
-- (void)calendarDidDateSelected:(JTCalendar *)calendar date:(NSDate *)date;
+- (void)calendarDidDateSelected:(JTCalendar *)calendar date:(NSDate *)date
+                        dayView:(UIView *)dayView differentMonth:(BOOL)isDifferentMonth;
 
 @optional
 
